@@ -4,14 +4,16 @@
     Default markup for page level elements
 */
 
-html {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+html
+{
+    font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+    font-size: 16px;  line-height: 1.5;  padding: 48px 24px 24px;
     color: #111;
-    padding: 48px 24px 24px;
 }
-
+img
+{
+    max-width: 100%;  vertical-align: top;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -19,14 +21,84 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-            background: #e85e00;
-            color: white;
-            text-shadow: none;
+::-moz-selection
+{
+    color: white;
+    background: #e85e00;  text-shadow: none;
 }
 
-::selection {
-        background: #e85e00;
-        color: white;
-        text-shadow: none;
+::selection
+{
+    color: white;
+    background: #e85e00;  text-shadow: none;
+}
+/*
+    Elements: typography
+    ---
+    Default markup for typographic elements
+*/
+
+h1
+{
+    font-family: 'Times New Roman', serif;  font-size: 36px;  font-weight: normal;  line-height: 40px;  margin: 0 0 48px;
+}
+
+h2
+{
+    font-size: 23px;  line-height: 32px;  margin: 0 0 24px;
+}
+
+h3
+{
+    font-size: 18px;  line-height: 24px;  margin: 0 0 24px;
+}
+
+h4,
+h5,
+h6
+{
+    font-size: 16px;  line-height: 24px;  margin: 0 0 24px;
+}
+figcaption
+{
+    font-size: 12px;  line-height: 16px;  padding-top: 8px;  color: grey;
+}
+blockquote
+{ font-family: 'Times New Roman', serif; font-size: 23px;  font-weight: normal;
+    font-style: italic;  line-height: 32px;  margin: 0 0 24px;
+}
+blockquote *
+{
+    font-size: inherit;  font-weight: inherit;  line-height: inherit;
+}
+ul,
+ol,
+blockquote
+{
+    padding-left: 24px;
+}
+li ul,
+li ol{
+    margin-bottom: 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: LightGrey;
+    margin: 0 0 24px;
+}
+
+a {
+    color: royalBlue;
+    transition: all .5s erase-in-out;
+}
+
+a:hover,
+a:focus {
+    color: red;
+}
+
+a:visited,
+a:active {
+    color: blueViolet;
 }
